@@ -73,7 +73,7 @@ class ContactList(QMainWindow):
 
     @Slot()
     def __on_remove_contact(self):
-        """Handles the event when the user clicks the remove button."""
+        """ Handles the event when the user clicks the remove button."""
         row = self.contact_table.currentRow()
         if row >= 0:
             result = QMessageBox.question(self, "Remove Contact", f"Are you sure you want to remove the selected contact?", QMessageBox.Yes | QMessageBox.No)
